@@ -20,7 +20,7 @@ function setup() {
       let c = img.get(xPos, yPos);
       push();
       translate(xPos, yPos);
-      //rotate(radians(random(360)))
+      rotate(radians(random(360)))
       noFill();
       stroke(color(c))
       strokeWeight(random((5)));
