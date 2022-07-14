@@ -20,13 +20,13 @@ function setup() {
       let c = img.get(xPos, yPos);
       push();
       translate(xPos, yPos);
-      rotate(radians(random(360)))
+      //rotate(radians(random(360)))
       noFill();
       stroke(color(c))
       strokeWeight(random((5)));
       point(xPos, yPos);
       strokeWeight(random(3))
-      //curve(xPos, yPos, sin(xPos)*random(70), sin(yPos)*random(40), cos(xPos)*random(40), cos(yPos)*random(40), sin(xPos)*cos(yPos)*random(10), sin(yPos)*cos(xPos)*random(10))
+      curve(xPos, yPos, sin(xPos)*random(70), sin(yPos)*random(40), cos(xPos)*random(40), cos(yPos)*random(40), sin(xPos)*cos(yPos)*random(10), sin(yPos)*cos(xPos)*random(10))
       pop();
     }
   }
